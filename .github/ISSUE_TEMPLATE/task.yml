@@ -1,0 +1,27 @@
+name: Task
+description: Planned work for maintainers and contributors
+title: "task: "
+labels: [task]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: milestone
+    attributes:
+      label: Milestone
+      description: Which milestone does this belong to? (maintainers set the actual milestone)
+      placeholder: "e.g. v0.4"

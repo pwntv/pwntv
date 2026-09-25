@@ -38,6 +38,12 @@ games you already use, without getting in the way.
 None of the above is implemented yet — this list describes the intended
 scope, not current functionality.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, and
+[docs/dev-setup.md](docs/dev-setup.md) to set up a local development
+environment.
+
 ## Roadmap
 
 Development is tracked via GitHub milestones:

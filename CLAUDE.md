@@ -19,6 +19,23 @@ Decided in [ADR-0002](docs/adr/0002-ui-stack.md):
 - **Session/window management**: [Hyprland](https://hyprland.org/) config
 - All of the above live in **one Cargo workspace**
 
+## Image build
+
+Decided in [ADR-0003](docs/adr/0003-iso-build-tool.md):
+
+- **Image tool**: [live-build](https://wiki.debian.org/DebianLive), producing
+  a hybrid Debian 13 "trixie" ISO for x86_64
+
+Planned repo layout, under `image/`:
+
+- `config/package-lists/*.list.chroot`: Debian packages to install
+- `config/includes.chroot/`: files copied into the image (Hyprland config,
+  systemd units, plugin manifests)
+- `config/hooks/live/*.hook.chroot`: scripts run inside the image during
+  the build
+- `auto/config`: the `lb config` options, so the build is one repeatable
+  command
+
 ## Working conventions
 
 - Rust is the primary implementation language across the shell, input

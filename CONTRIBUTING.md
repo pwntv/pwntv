@@ -18,7 +18,7 @@ Common types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, `ci`, `build`,
 
 New source files should include an [SPDX license identifier](https://spdx.dev/) header at the top, e.g.:
 
-```
+```text
 // SPDX-License-Identifier: MIT
 ```
 

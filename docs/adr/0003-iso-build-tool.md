@@ -2,7 +2,7 @@
 
 - **Status:** Accepted
 - **Date:** 2026-09-25
-- **Deciders:** @<dev-494>
+- **Deciders:** @dev-494
 - **Issue:** #5
 
 ## Context
@@ -14,7 +14,7 @@ We need a tool that builds this image reproducibly, locally (WSL2) and in CI (Gi
 Options considered:
 
 | Option | Output | Config style | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **live-build** | Hybrid live ISO, optional installer | Folder of package lists, included files and hook scripts | Debian's own tool; used by Debian Live and Kali Linux |
 | mkosi | Disk images (appliance-style); `mkosi qemu` for fast boot tests | Declarative INI | Modern, fast iteration; installer ISO is not its focus |
 | debos | Disk images, mostly ARM/embedded | YAML recipes | Prefers KVM; better fit for ARM boards |
